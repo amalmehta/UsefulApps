@@ -34,7 +34,6 @@ One static page: `index.html`, `styles.css`, self-hosted fonts and WebP images. 
 ## Known limits
 
 - Prices are copied from each app's config by hand, so they can drift. Re-check them when an app goes live.
-- Messaging Graph has no screenshot yet.
 - No analytics, so there's no way to see which apps people click.
 
 ## If it grew

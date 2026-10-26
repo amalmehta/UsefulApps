@@ -34,7 +34,7 @@ magick shot.png -gravity North -crop 1200x800+0+0 +repage -strip /tmp/s.png
 for w in 480 960; do magick /tmp/s.png -resize ${w}x /tmp/s$w.png && cwebp -q 80 /tmp/s$w.png -o images/shots/my-app-$w.webp; done
 ```
 
-If there is no screenshot, use the large-icon panel (`<div class="shot shot-icon">`), as Messaging Graph does.
+Every card needs a screenshot. Take it from demo or made-up data, never anyone's real data.
 
 ## Check
 

@@ -213,16 +213,15 @@ DEFINITIONS AND DEFERRED:
   It becomes a plain price once the app's buy or store link is live.
 - "Live": a public URL that returns 200. Only then does a card get a link.
 - Looks right on a phone: no horizontal scroll at 320 px wide, 16 px side gutter.
-- Deferred: buy and App Store links (each app's docs/GO-LIVE.md), a Messaging Graph screenshot,
-  a custom domain.
+- Deferred: buy and App Store links (each app's docs/GO-LIVE.md), a custom domain.
 
 OPEN QUESTIONS / ASSUMPTIONS:
 
-- Prices come from each project's config: RamClean and Messaging Graph $5 once with a 14-day trial;
-  Goal Garden free for 3 goals, Plus $2.99/month or $19.99/year; What To Cook Next 8 recipes free,
-  Full Course $9.99 once; Recruiting Platform free tier, Search Pass $9.99/week or $24.99/month;
-  Start a Company free. All but Start a Company are marked planned.
-- Messaging Graph has no screenshot in its repo, so its card shows its icon large instead.
+- Prices come from each project's config: RamClean $5 once with a 14-day trial; Messaging Graph
+  free for everyone, no trial; Goal Garden free for 3 goals, Plus $2.99/month or $19.99/year;
+  What To Cook Next 8 recipes free, Full Course $9.99 once; Recruiting Platform free tier,
+  Search Pass $9.99/week or $24.99/month; Start a Company free. All but Start a Company are marked planned.
+- Messaging Graph's screenshot is taken from the app's own demo data (`./mg serve --synthetic`), never real Messages.
 - Start a Company is listed first because it is the one app people can use today.
 
 CHANGELOG:
