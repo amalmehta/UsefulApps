@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- The 1200 × 630 link-preview card. scripts/make-images.sh screenshots this into images/og.png.
+     Matches og:image:alt in index.html: "Useful Apps by Amal Mehta, with the six apps' icons in a row". -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Newsreader"; font-weight: 400 600; src: url("../fonts/newsreader-latin.woff2") format("woff2"); }
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #fafaf8; color: #272624;
+    font-family: "Newsreader", Georgia, serif;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 64px;
+  }
+  h1 { margin: 0; font-size: 104px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; }
+  h1 .by { font-weight: 400; font-size: 60px; color: #5d5c58; display: block; text-align: center; margin-top: 18px; }
+  .icons { display: flex; gap: 32px; }
+  /* Same corner ratio as .app-icon on the page (14px on 64px), plus a hairline so the pale icons keep an edge. */
+  .icons img { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 0 0 1px #e4e3de, 0 4px 14px rgba(39, 38, 36, 0.08); }
+</style>
+</head>
+<body>
+  <h1>Useful Apps <span class="by">by Amal Mehta</span></h1>
+  <div class="icons">
+    <img src="../images/icons/start-a-company.webp" alt="">
+    <img src="../images/icons/ramclean.webp" alt="">
+    <img src="../images/icons/goal-garden.webp" alt="">
+    <img src="../images/icons/what-to-cook-next.webp" alt="">
+    <img src="../images/icons/messaging-graph.webp" alt="">
+    <img src="../images/icons/recruiting-platform.webp" alt="">
+  </div>
+</body>
+</html>

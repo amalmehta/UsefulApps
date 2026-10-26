@@ -10,6 +10,7 @@
 | `images/icons/` | Each app's icon from its own repo, 128 px WebP |
 | `images/shots/` | Each app's screenshot, cropped 3:2, at 480 and 960 px WebP |
 | `fonts/` | Newsreader and Inter (Latin), with their SIL Open Font Licences |
+| `scripts/make-images.sh`, `scripts/og.html` | Rebuild the three PNGs above (`sh scripts/make-images.sh`) |
 | `tests/check_site.py` | Checks images, alt text and links |
 | `docs/` | Instructions, system design, this file, and `images/page.webp` for the README |
 | `UsefulApps.md` | The project spec |

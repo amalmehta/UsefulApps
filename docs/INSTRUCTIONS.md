@@ -48,4 +48,4 @@ It fails if an image is missing or has no alt text, a link is a placeholder (`RE
 
 GitHub Pages serves the `main` branch root. Run the check, commit, and push to `main`; the site updates within a minute or two at <https://amalmehta.github.io/UsefulApps/>.
 
-The Open Graph image (`images/og.png`, 1200 × 630) and the README screenshot (`docs/images/page.webp`) were rendered with headless Chrome. Re-render them if the apps change.
+The favicon PNGs and the Open Graph image (`images/og.png`, 1200 × 630) are rebuilt by `sh scripts/make-images.sh` (needs `rsvg-convert` and Google Chrome); edit `scripts/og.html` to change the card. Re-run it if an app's icon changes. The README screenshot (`docs/images/page.webp`) was rendered with headless Chrome.
