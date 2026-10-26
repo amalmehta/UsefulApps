@@ -108,6 +108,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .badge { font-size: 0.78rem; font-weight: 600; line-height: 1.5; padding: 0.1rem 0.6rem; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
 .price { font-size: 0.9rem; color: var(--text); }
 .planned { margin-left: 0.3rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--warm); white-space: nowrap; }
+.action { padding-top: 0.15rem; }
 .go, .soon { display: inline-block; padding: 0.45rem 1rem; border-radius: 999px; font-weight: 600; font-size: 0.92rem; }
 .go { color: #fff; background: var(--accent); transition: background-color 0.2s; }
 .go:hover { text-decoration: none; background: color-mix(in srgb, var(--accent) 85%, #000); }
