@@ -11,7 +11,7 @@
 | `images/shots/` | Each app's screenshot, cropped 3:2, at 480 and 960 px WebP |
 | `fonts/` | Newsreader and Inter (Latin), with their SIL Open Font Licences |
 | `scripts/make-images.sh`, `scripts/og.html` | Rebuild the three PNGs above (`sh scripts/make-images.sh`) |
-| `tests/check_site.py` | Checks images, alt text and links |
+| `tests/check_site.py` | Checks images, alt text, links and install notes; `--live` checks cards against what's really out |
 | `docs/` | Instructions, system design, this file, and `images/page.webp` for the README |
 | `UsefulApps.md` | The project spec |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |

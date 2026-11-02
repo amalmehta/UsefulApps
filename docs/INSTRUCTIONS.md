@@ -24,7 +24,7 @@ When an app goes on sale, swap its "Coming soon" for `<a class="go" href="…">B
 
 ## Add an app
 
-Copy an existing `<li class="app">` block and change every field. Make the images like this (needs `magick` and `cwebp`):
+Copy an existing `<li class="app">` block into the right group, Use it today or Coming soon, and change every field. A download needs a `<p class="install">` note with the app's minimum macOS and first-open steps. Make the images like this (needs `magick` and `cwebp`):
 
 ```sh
 # icon: trim any transparent margin, then 128 px
@@ -40,9 +40,12 @@ Every card needs a screenshot. Take it from demo or made-up data, never anyone's
 
 ```sh
 python3 tests/check_site.py
+python3 tests/check_site.py --live
 ```
 
-It fails if an image is missing or has no alt text, a link is a placeholder (`REPLACE-ME`, `#`, `example.com`), or an external link isn't https.
+The first fails if an image is missing or has no alt text, a link is a placeholder (`REPLACE-ME`, `#`, `example.com`), an external link isn't https, or a download has no install note.
+
+The second also goes online. It fails if a card's link doesn't answer 200, a link under `releases/latest` names a version, or a Coming soon card has a public repo with a release.
 
 ## Deploy
 

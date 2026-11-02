@@ -74,6 +74,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .lede { font-family: var(--serif); font-size: clamp(1.2rem, 2.6vw, 1.5rem); line-height: 1.4; max-width: 40ch; margin: 0 0 0.75rem; }
 .note { color: var(--muted); font-size: 0.95rem; max-width: 60ch; margin: 0; }
 
+/* What you can use today, then what's coming */
+.group-title { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; line-height: 1.2; margin: 0 0 1rem; }
+
 /* The apps: one column on phones, two from tablet width up */
 .apps { list-style: none; padding: 0; margin: 0 0 3rem; display: grid; gap: 1.25rem; }
 @media (min-width: 760px) { .apps { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
@@ -85,7 +88,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .app-head { display: grid; grid-template-columns: 64px 1fr; gap: 1rem; align-items: start; }
 .app-icon { width: 64px; height: 64px; border-radius: 14px; }
-.app h2 { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; line-height: 1.25; margin: 0.05rem 0 0.25rem; }
+.app h3 { font-family: var(--serif); font-weight: 600; font-size: 1.35rem; line-height: 1.25; margin: 0.05rem 0 0.25rem; }
 .pitch { margin: 0; font-size: 0.95rem; line-height: 1.5; color: var(--muted); }
 
 /* Every card has a screenshot */
@@ -112,6 +115,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .go:hover { text-decoration: none; background: color-mix(in srgb, var(--accent) 85%, #000); }
 @media (prefers-color-scheme: dark) { .go { color: #10161c; } .go:hover { background: color-mix(in srgb, var(--accent) 85%, #fff); } }
 .soon { color: var(--muted); border: 1px dashed var(--line); }
+.install { font-size: 0.82rem; line-height: 1.5; color: var(--muted); }
 @media (pointer: coarse) { .go, .soon { padding-block: 0.65rem; } }
 
 @media (max-width: 480px) {
