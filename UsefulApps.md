@@ -195,17 +195,17 @@ and terracotta), so the two read as one family.
 
 The apps come from the shortlist in ProjectForge/docs/commercial-potential.md: Start a Company,
 RamClean, Goal Garden and Dreams, What To Cook Next, Messaging Graph and Recruiting Platform, plus
-Path Finder, the most complete of the document's near misses. Each
+Path Finder, the most complete of the document's near misses, and Avengers Assemble and AI Advances. Each
 card shows the app's real icon, a one-line pitch saying what it does for whom, two or three bullets,
 platform badges (Mac, iPhone, Web), the price from the project's own config, a screenshot where the
-repo has one, and one action. Only public, live things are linked (Start a Company's site); the
-rest say "Coming soon". Nothing is invented: no URLs, ratings, testimonials or user counts.
+repo has one, and one action. Only public, live things are linked; the rest say "Coming soon". Apps you
+can use today come first, in their own group, and each download carries an install note. Nothing is invented: no URLs, ratings, testimonials or user counts.
 
 DELIVERABLES:
 
 - The live site: https://amalmehta.github.io/UsefulApps/
 - The public repo: https://github.com/amalmehta/UsefulApps
-- tests/check_site.py: images exist and have alt text, no placeholder links, every external link https
+- tests/check_site.py: images exist and have alt text, no placeholder links, every external link https, every download has an install note; --live checks links answer 200 and no Coming soon card has a public release
 - README.md, docs/INSTRUCTIONS.md, docs/SYSTEM-DESIGN.md, docs/FILE-STRUCTURE.md
 
 DEFINITIONS AND DEFERRED:
@@ -218,8 +218,7 @@ DEFINITIONS AND DEFERRED:
 
 OPEN QUESTIONS / ASSUMPTIONS:
 
-- Prices come from each project's config: RamClean $5 once with a 14-day trial; Messaging Graph
-  free for everyone, no trial; Goal Garden free for 3 goals, Plus $2.99/month or $19.99/year;
+- Prices come from each project's config: RamClean, Messaging Graph, Avengers Assemble and AI Advances free; Goal Garden free for 3 goals, Plus $2.99/month or $19.99/year;
   What To Cook Next 8 recipes free, Full Course $9.99 once; Recruiting Platform free tier,
   Search Pass $9.99/week or $24.99/month; Start a Company free. All but Start a Company and Path Finder are marked planned.
   Path Finder has no price in its own config or docs, so its card says "Price not set yet".
@@ -269,3 +268,4 @@ CHANGELOG:
 - 2026-11-02 — added Path Finder as the seventh app
 - 2026-11-02 — added Avengers Assemble as the eighth app
 - 2026-11-02 — added AI Advances as the ninth app; RamClean and Messaging Graph now link their free downloads
+- 2026-11-02 — apps you can use today come first; download cards carry install notes; the check gained --live

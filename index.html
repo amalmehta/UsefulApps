@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>Useful Apps · Amal Mehta</title>
-  <meta name="description" content="A small suite of useful apps by Amal Mehta: for your Mac's memory, your long-term goals, learning to cook, starting a company, keeping in touch and finding a job.">
+  <meta name="description" content="A small suite of useful apps by Amal Mehta: for your Mac's memory, your long-term goals, learning to cook, starting a company, keeping in touch, following AI, finding a job, planning a trip and running a company of AI agents.">
   <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#131414" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
@@ -39,17 +39,18 @@
     <section class="wrap intro">
       <h1>Useful apps</h1>
       <p class="lede">Small apps I build for problems I have myself, made for anyone who has them too.</p>
-      <p class="note">Five are live today. The rest are being readied for release, so their prices are planned rather than final.</p>
+      <p class="note">Five you can use today, all free. The other four are being readied for release, so their prices are planned rather than final.</p>
     </section>
 
-    <section class="wrap" id="apps" aria-label="The apps">
+    <section class="wrap group" id="apps" aria-labelledby="apps-title">
+      <h2 class="group-title" id="apps-title">Use it today</h2>
       <ul class="apps">
 
         <li class="app" id="start-a-company">
           <div class="app-head">
             <img class="app-icon" src="images/icons/start-a-company.webp" width="64" height="64" alt="Start a Company’s icon: a page with a green tick">
             <div>
-              <h2>Start a Company</h2>
+              <h3>Start a Company</h3>
               <p class="pitch">For first-time US founders: answer a few questions and get your own checklist for forming a company.</p>
             </div>
           </div>
@@ -70,7 +71,7 @@
           <div class="app-head">
             <img class="app-icon" src="images/icons/avengers-assemble.webp" width="64" height="64" alt="Avengers Assemble’s icon: a central node joined to six agents">
             <div>
-              <h2>Avengers Assemble</h2>
+              <h3>Avengers Assemble</h3>
               <p class="pitch">For anyone with a big goal: a company of AI agents plans and does the work, and learns who should do what.</p>
             </div>
           </div>
@@ -84,6 +85,7 @@
             <p class="badges"><span class="badge">Mac</span></p>
             <p class="price">Free</p>
             <p class="action"><a class="go" href="https://github.com/amalmehta/AvengersAssemble/releases/latest/download/AvengersAssemble.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
+            <p class="install">macOS 14 or later, and it needs <a href="https://docs.astral.sh/uv/">uv</a>. Unzip and move it to Applications. It isn’t notarized yet, so macOS blocks the first open: go to System Settings → Privacy &amp; Security and click Open Anyway.</p>
           </div>
         </li>
 
@@ -91,7 +93,7 @@
           <div class="app-head">
             <img class="app-icon" src="images/icons/ramclean.webp" width="64" height="64" alt="RamClean’s icon: a smiling ram">
             <div>
-              <h2>RamClean</h2>
+              <h3>RamClean</h3>
               <p class="pitch">For Mac users short on memory: spots apps you aren’t using that are eating it, and asks before quitting them.</p>
             </div>
           </div>
@@ -105,14 +107,66 @@
             <p class="badges"><span class="badge">Mac</span></p>
             <p class="price">Free</p>
             <p class="action"><a class="go" href="https://github.com/amalmehta/RamClean/releases/latest/download/RamClean.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
+            <p class="install">macOS 14 or later. Unzip and move it to Applications. It isn’t notarized yet, so macOS blocks the first open: go to System Settings → Privacy &amp; Security and click Open Anyway.</p>
           </div>
         </li>
+
+        <li class="app" id="messaging-graph">
+          <div class="app-head">
+            <img class="app-icon" src="images/icons/messaging-graph.webp" width="64" height="64" alt="Messaging Graph’s icon: three linked dots">
+            <div>
+              <h3>Messaging Graph</h3>
+              <p class="pitch">For people who lose touch: reads your Messages history on your Mac and shows who to reach out to.</p>
+            </div>
+          </div>
+          <img class="shot" src="images/shots/messaging-graph-960.webp" srcset="images/shots/messaging-graph-480.webp 480w, images/shots/messaging-graph-960.webp 960w" sizes="(min-width: 760px) 470px, calc(100vw - 32px)" width="960" height="640" loading="lazy" alt="Messaging Graph’s week, from a made-up demo history: two friends who have gone quiet, two plans that never got a date, and a suggested message to send">
+          <ul class="does">
+            <li>Shows who you’ve drifted from, and plans that never got a date.</li>
+            <li>Suggests a message worth sending to each of them.</li>
+            <li>Everything stays on your Mac, in an encrypted vault.</li>
+          </ul>
+          <div class="app-foot">
+            <p class="badges"><span class="badge">Mac</span></p>
+            <p class="price">Free</p>
+            <p class="action"><a class="go" href="https://github.com/amalmehta/MessagingGraph/releases/latest/download/Messaging-Graph.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
+            <p class="install">macOS 13 or later. Unzip and move it to Applications. It isn’t notarized yet, so macOS blocks the first open: go to System Settings → Privacy &amp; Security and click Open Anyway. It then asks for Full Disk Access, to read your Messages history.</p>
+          </div>
+        </li>
+
+        <li class="app" id="ai-advances">
+          <div class="app-head">
+            <img class="app-icon" src="images/icons/ai-advances.webp" width="64" height="64" alt="AI Advances’ icon">
+            <div>
+              <h3>AI Advances</h3>
+              <p class="pitch">For anyone following AI: tracks where it’s heading, from the latest models to dated forecasts.</p>
+            </div>
+          </div>
+          <img class="shot" src="images/shots/ai-advances-960.webp" srcset="images/shots/ai-advances-480.webp 480w, images/shots/ai-advances-960.webp 960w" sizes="(min-width: 760px) 470px, calc(100vw - 32px)" width="960" height="640" loading="lazy" alt="AI Advances on its Forecasts page: an auto-written outlook, then a timeline of dated predictions, each with its most likely date and a 90% range">
+          <ul class="does">
+            <li>Follows the latest model releases, and what each lab is working on.</li>
+            <li>Turns long-run trends in capability, cost and compute into dated forecasts.</li>
+            <li>Updates itself every morning from public data.</li>
+          </ul>
+          <div class="app-foot">
+            <p class="badges"><span class="badge">Mac</span> <span class="badge">Web</span></p>
+            <p class="price">Free</p>
+            <p class="action"><a class="go" href="https://github.com/amalmehta/ai-advances/releases/latest">Download for Mac <span aria-hidden="true">→</span></a></p>
+            <p class="install">macOS 14 or later. Unzip and move it to Applications. It isn’t notarized yet, so macOS blocks the first open: go to System Settings → Privacy &amp; Security and click Open Anyway.</p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="wrap group" id="coming-soon" aria-labelledby="coming-soon-title">
+      <h2 class="group-title" id="coming-soon-title">Coming soon</h2>
+      <ul class="apps">
 
         <li class="app" id="goal-garden">
           <div class="app-head">
             <img class="app-icon" src="images/icons/goal-garden.webp" width="64" height="64" alt="Goal Garden’s icon: a flowering stem growing from the ground at dusk">
             <div>
-              <h2>Goal Garden and Dreams</h2>
+              <h3>Goal Garden and Dreams</h3>
               <p class="pitch">For anyone with long-term goals: each goal is a plant that grows as you log small steps toward it.</p>
             </div>
           </div>
@@ -133,7 +187,7 @@
           <div class="app-head">
             <img class="app-icon" src="images/icons/what-to-cook-next.webp" width="64" height="64" alt="What To Cook Next’s icon: an egg frying in a pan">
             <div>
-              <h2>What To Cook Next</h2>
+              <h3>What To Cook Next</h3>
               <p class="pitch">For beginner cooks: a cooking course that picks one recipe at a time to train your weakest skill.</p>
             </div>
           </div>
@@ -150,53 +204,11 @@
           </div>
         </li>
 
-        <li class="app" id="messaging-graph">
-          <div class="app-head">
-            <img class="app-icon" src="images/icons/messaging-graph.webp" width="64" height="64" alt="Messaging Graph’s icon: three linked dots">
-            <div>
-              <h2>Messaging Graph</h2>
-              <p class="pitch">For people who lose touch: reads your Messages history on your Mac and shows who to reach out to.</p>
-            </div>
-          </div>
-          <img class="shot" src="images/shots/messaging-graph-960.webp" srcset="images/shots/messaging-graph-480.webp 480w, images/shots/messaging-graph-960.webp 960w" sizes="(min-width: 760px) 470px, calc(100vw - 32px)" width="960" height="640" loading="lazy" alt="Messaging Graph’s week, from a made-up demo history: two friends who have gone quiet, two plans that never got a date, and a suggested message to send">
-          <ul class="does">
-            <li>Shows who you’ve drifted from, and plans that never got a date.</li>
-            <li>Suggests a message worth sending to each of them.</li>
-            <li>Everything stays on your Mac, in an encrypted vault.</li>
-          </ul>
-          <div class="app-foot">
-            <p class="badges"><span class="badge">Mac</span></p>
-            <p class="price">Free</p>
-            <p class="action"><a class="go" href="https://github.com/amalmehta/MessagingGraph/releases/latest/download/Messaging-Graph.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
-          </div>
-        </li>
-
-        <li class="app" id="ai-advances">
-          <div class="app-head">
-            <img class="app-icon" src="images/icons/ai-advances.webp" width="64" height="64" alt="AI Advances’ icon">
-            <div>
-              <h2>AI Advances</h2>
-              <p class="pitch">For anyone following AI: tracks where it’s heading, from the latest models to dated forecasts.</p>
-            </div>
-          </div>
-          <img class="shot" src="images/shots/ai-advances-960.webp" srcset="images/shots/ai-advances-480.webp 480w, images/shots/ai-advances-960.webp 960w" sizes="(min-width: 760px) 470px, calc(100vw - 32px)" width="960" height="640" loading="lazy" alt="AI Advances on its Forecasts page: an auto-written outlook, then a timeline of dated predictions, each with its most likely date and a 90% range">
-          <ul class="does">
-            <li>Follows the latest model releases, and what each lab is working on.</li>
-            <li>Turns long-run trends in capability, cost and compute into dated forecasts.</li>
-            <li>Updates itself every morning from public data.</li>
-          </ul>
-          <div class="app-foot">
-            <p class="badges"><span class="badge">Mac</span> <span class="badge">Web</span></p>
-            <p class="price">Free</p>
-            <p class="action"><a class="go" href="https://github.com/amalmehta/ai-advances/releases/latest/download/AI-Advances-v1.4.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
-          </div>
-        </li>
-
         <li class="app" id="recruiting-platform">
           <div class="app-head">
             <img class="app-icon" src="images/icons/recruiting-platform.webp" width="64" height="64" alt="Recruiting Platform’s icon: a briefcase with a gold tick">
             <div>
-              <h2>Recruiting Platform</h2>
+              <h3>Recruiting Platform</h3>
               <p class="pitch">For job seekers in tech and research: matches you to live openings at 136 companies and labs, and explains every ranking.</p>
             </div>
           </div>
@@ -217,7 +229,7 @@
           <div class="app-head">
             <img class="app-icon" src="images/icons/path-finder.webp" width="64" height="64" alt="Path Finder’s icon: a dark trail winding up to a flag on an orange hillside">
             <div>
-              <h2>Path Finder</h2>
+              <h3>Path Finder</h3>
               <p class="pitch">For travelers tired of the same top-ten lists: turns your taste in music, film and books into trips worth taking.</p>
             </div>
           </div>

@@ -16,14 +16,16 @@ One static page: `index.html`, `styles.css`, self-hosted fonts and WebP images. 
 
 ## Why
 
-- **Simplest thing that works:** seven cards change rarely, by hand. A framework, generator or CMS would add more to maintain than it saves.
+- **Simplest thing that works:** nine cards change rarely, by hand. A framework, generator or CMS would add more to maintain than it saves.
 - **Matches the portfolio:** the portfolio is a plain static site too, so the palette, type and conventions carry straight over.
 - **Fast and cheap:** about 400 KB in all, free hosting, nothing to keep running.
 
 ## Decisions and trade-offs
 
-- **Content lives in the HTML.** Editing means copying a block. With seven apps that's clearer than a data file plus a template.
-- **Honest states.** Only public, live URLs are linked. Everything else says "Coming soon", and prices not yet on sale carry a "planned" tag.
+- **Content lives in the HTML.** Editing means copying a block. With nine apps that's clearer than a data file plus a template.
+- **Honest states.** Only public, live URLs are linked. Everything else says "Coming soon", and prices not yet on sale carry a "planned" tag. `--live` in the check catches a card that has fallen behind its app.
+- **Two groups.** Apps you can use today come first, so nobody scrolls past Coming soon cards to find one. An app moves up when its link goes live.
+- **Install notes on the card.** The Mac apps aren't notarized, and macOS blocks the first open. A note beside the download keeps that from reading as a broken app.
 - **Images:** 3:2 WebP screenshots at 480 and 960 px with `srcset`, 128 px WebP icons, lazy loading, and width and height set to avoid layout shift.
 - **Accessibility:** alt text on every image, visible focus rings, a skip link, dark mode from `prefers-color-scheme`, contrast at WCAG AA or better.
 
