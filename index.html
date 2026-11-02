@@ -17,13 +17,13 @@
   <meta property="og:site_name" content="Amal Mehta">
   <meta property="og:url" content="https://amalmehta.github.io/UsefulApps/">
   <meta property="og:title" content="Useful Apps by Amal Mehta">
-  <meta property="og:description" content="Seven small apps for real problems: your Mac's memory, long-term goals, learning to cook, starting a company, keeping in touch, finding a job and planning a trip.">
+  <meta property="og:description" content="Nine small apps for real problems: your Mac's memory, long-term goals, learning to cook, starting a company, keeping in touch, following AI, finding a job, planning a trip and running a company of AI agents.">
   <meta property="og:image" content="https://amalmehta.github.io/UsefulApps/images/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Useful Apps by Amal Mehta, with the seven apps' icons in a row">
+  <meta property="og:image:alt" content="Useful Apps by Amal Mehta, with the nine apps' icons in a row">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image:alt" content="Useful Apps by Amal Mehta, with the seven apps' icons in a row">
+  <meta name="twitter:image:alt" content="Useful Apps by Amal Mehta, with the nine apps' icons in a row">
   <link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
@@ -39,7 +39,7 @@
     <section class="wrap intro">
       <h1>Useful apps</h1>
       <p class="lede">Small apps I build for problems I have myself, made for anyone who has them too.</p>
-      <p class="note">One is live today. The rest are being readied for release, so their prices are planned rather than final.</p>
+      <p class="note">Five are live today. The rest are being readied for release, so their prices are planned rather than final.</p>
     </section>
 
     <section class="wrap" id="apps" aria-label="The apps">
@@ -66,6 +66,27 @@
           </div>
         </li>
 
+        <li class="app" id="avengers-assemble">
+          <div class="app-head">
+            <img class="app-icon" src="images/icons/avengers-assemble.webp" width="64" height="64" alt="Avengers Assemble’s icon: a central node joined to six agents">
+            <div>
+              <h2>Avengers Assemble</h2>
+              <p class="pitch">For anyone with a big goal: a company of AI agents plans and does the work, and learns who should do what.</p>
+            </div>
+          </div>
+          <img class="shot" src="images/shots/avengers-assemble-960.webp" srcset="images/shots/avengers-assemble-480.webp 480w, images/shots/avengers-assemble-960.webp 960w" sizes="(min-width: 760px) 470px, calc(100vw - 32px)" width="960" height="640" loading="lazy" alt="Avengers Assemble on a finished run: ten tasks with the agent and model that took each, reviewer scores, your ratings, and why that agent was chosen">
+          <ul class="does">
+            <li>A CEO agent plans the work, and a reviewer scores every result.</li>
+            <li>Multi-armed bandits learn which agent, on which model, should do each task.</li>
+            <li>Every run has dollar and task caps; nothing is sent, bought or published.</li>
+          </ul>
+          <div class="app-foot">
+            <p class="badges"><span class="badge">Mac</span></p>
+            <p class="price">Free</p>
+            <p class="action"><a class="go" href="https://github.com/amalmehta/AvengersAssemble/releases/latest/download/AvengersAssemble.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
+          </div>
+        </li>
+
         <li class="app" id="ramclean">
           <div class="app-head">
             <img class="app-icon" src="images/icons/ramclean.webp" width="64" height="64" alt="RamClean’s icon: a smiling ram">
@@ -82,8 +103,8 @@
           </ul>
           <div class="app-foot">
             <p class="badges"><span class="badge">Mac</span></p>
-            <p class="price">$5 once, 14-day free trial <span class="planned">planned</span></p>
-            <p class="action"><span class="soon">Coming soon</span></p>
+            <p class="price">Free</p>
+            <p class="action"><a class="go" href="https://github.com/amalmehta/RamClean/releases/latest/download/RamClean.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
           </div>
         </li>
 
@@ -145,8 +166,29 @@
           </ul>
           <div class="app-foot">
             <p class="badges"><span class="badge">Mac</span></p>
-            <p class="price">Free <span class="planned">planned</span></p>
-            <p class="action"><span class="soon">Coming soon</span></p>
+            <p class="price">Free</p>
+            <p class="action"><a class="go" href="https://github.com/amalmehta/MessagingGraph/releases/latest/download/Messaging-Graph.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
+          </div>
+        </li>
+
+        <li class="app" id="ai-advances">
+          <div class="app-head">
+            <img class="app-icon" src="images/icons/ai-advances.webp" width="64" height="64" alt="AI Advances’ icon">
+            <div>
+              <h2>AI Advances</h2>
+              <p class="pitch">For anyone following AI: tracks where it’s heading, from the latest models to dated forecasts.</p>
+            </div>
+          </div>
+          <img class="shot" src="images/shots/ai-advances-960.webp" srcset="images/shots/ai-advances-480.webp 480w, images/shots/ai-advances-960.webp 960w" sizes="(min-width: 760px) 470px, calc(100vw - 32px)" width="960" height="640" loading="lazy" alt="AI Advances on its Forecasts page: an auto-written outlook, then a timeline of dated predictions, each with its most likely date and a 90% range">
+          <ul class="does">
+            <li>Follows the latest model releases, and what each lab is working on.</li>
+            <li>Turns long-run trends in capability, cost and compute into dated forecasts.</li>
+            <li>Updates itself every morning from public data.</li>
+          </ul>
+          <div class="app-foot">
+            <p class="badges"><span class="badge">Mac</span> <span class="badge">Web</span></p>
+            <p class="price">Free</p>
+            <p class="action"><a class="go" href="https://github.com/amalmehta/ai-advances/releases/latest/download/AI-Advances-v1.4.zip">Download for Mac <span aria-hidden="true">→</span></a></p>
           </div>
         </li>
 

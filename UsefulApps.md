@@ -267,3 +267,5 @@ CHANGELOG:
 - 2026-10-24 — added a note on me from my portfolio site (work, values, interests, visual and writing style), to fill gaps without overriding the spec
 - 2026-10-25 — changed meta-instruction: always open the app after making a build (was: after the MVP and each big change)
 - 2026-11-02 — added Path Finder as the seventh app
+- 2026-11-02 — added Avengers Assemble as the eighth app
+- 2026-11-02 — added AI Advances as the ninth app; RamClean and Messaging Graph now link their free downloads
